@@ -1,0 +1,194 @@
+/* Base container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+/* Header styles */
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.greeting {
+  font-size: 18px;
+}
+
+.roleSelector {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  width: auto;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Thread item styles within sidebar */
+.threadItem {
+  padding: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.threadItem:hover {
+  background-color: #eaeaea;
+}
+
+.activeThread {
+  background-color: #d6f5d6;
+}
+
+/* New thread creation form styles */
+.newThreadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.newThreadInput {
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.newThreadButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newThreadButton:hover {
+  background-color: #3d8d40;
+}
+
+/* Main content styles */
+.mainContent {
+  flex-grow: 1; /* Take up the remaining space after sidebar */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.headerControls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+/* Message area styles */
+.messageArea {
+  flex-grow: 1; /* Allow the message area to take up available space */
+  overflow-y: auto; /* Add scroll for overflow */
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  min-height: 300px;
+  max-height: 600px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.patient {
+  background-color: #dcf8c6;
+  text-align: left;
+}
+
+.doctor {
+  background-color: #f2f2f2;
+  text-align: right;
+}
+
+/* Input section styles */
+.inputSection {
+  display: flex;
+  align-items: center;
+}
+
+.inputSection input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.inputSection button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputSection button:hover {
+  background-color: #45a049;
+}
+
+/* Thread Controls and header style */
+.threadTitle {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Adjust threadControls to align items properly */
+.threadControls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Styles for the 'no thread' message */
+.noThreadMessage {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
